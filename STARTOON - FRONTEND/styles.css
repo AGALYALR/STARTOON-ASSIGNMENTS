@@ -1,0 +1,156 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #2C2B2B;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #FFFFFF;
+    width: 90%;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.patient-info {
+    padding: 20px;
+    color: #2C2B2B;
+}
+
+.patient-details {
+    display: flex;
+    align-items: center;
+}
+
+.patient-details h2 {
+    margin: 0;
+    color: #012E57;
+}
+
+.profile-pic img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+}
+
+.patient-name {
+    display: flex;
+    flex-direction: column;
+}
+
+.patient-name h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #002647;
+}
+
+.patient-name p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #7D7D7D;
+}
+
+.goal {
+    background-color: #002647;
+    margin-top: 20px;
+    border-radius: 8px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.goal-meter {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.circular-chart {
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+
+.circular-chart-svg {
+    transform: rotate(-90deg);
+    width: 100%;
+    height: 100%;
+}
+
+.circle-bg {
+    fill: none;
+    stroke: #AEACAC;
+    stroke-width: 2.8;
+}
+
+.circle {
+    fill: none;
+    stroke: #FFCC00; 
+    stroke-width: 2.8;
+    stroke-linecap: round;
+    transition: stroke-dasharray 0.6s ease;
+}
+
+.percentage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.goal-status {
+    display: flex;
+    flex-direction: column;
+}
+
+.status-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.status-item p {
+    margin: 0;
+    color: #FFFFFF;
+    font-size: 0.9rem;
+}
+
+.status-box {
+    width: 40px;
+    height: 20px;
+    background-color: #FFFFFF;
+    border-radius: 4px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.status-line {
+    width: 30px;
+    height: 2px;
+    display: block;
+}
+
+.green-line {
+    background-color: #37DD0D; 
+}
+
+.red-line {
+    background-color: #DF0100; 
+}
+
+.contact-info p, .medical-history h4, .medical-history p {
+    color: #2C2B2B;
+}
